@@ -1,0 +1,20 @@
+.header-card {
+    background-color: rgb(230, 255, 201);
+    width: 90%;
+    height: 6rem;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+.main-logo {
+    height: 6rem;
+    margin: 10px;
+    align-self: center;
+}
+
+.contact {
+    align-self: center;
+    text-align: right;
+}
