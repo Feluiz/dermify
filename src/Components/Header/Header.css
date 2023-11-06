@@ -3,18 +3,25 @@
     width: 90%;
     height: 6rem;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: auto;
     margin-top: 1rem;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    position: sticky; /*Delete this if it doesn't slide with the scroll*/
 }
 
 .main-logo {
     height: 6rem;
-    margin: 10px;
-    align-self: center;
+    align-self: flex-start;
 }
 
-.contact {
-    align-self: center;
-    text-align: right;
+#dropdown-basic-button {
+    font-size: larger;
+    border: 1px solid rgb(212, 223, 55);
+    background-color: rgb(186, 215, 154);
+    border-radius: 1rem;
+    padding: 10px;
 }
