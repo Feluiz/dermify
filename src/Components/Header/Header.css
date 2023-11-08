@@ -1,21 +1,21 @@
 .header-card {
     background-color: rgb(230, 255, 201);
     width: 90%;
-    height: 6rem;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
-    margin-top: 1rem;
     border-radius: 15px;
     align-items: center;
-    justify-content: center;
     position: sticky; /*Delete this if it doesn't slide with the scroll*/
+    top: 15px;
+    z-index: 99;
 }
 
 .main-logo {
     height: 6rem;
     align-self: flex-start;
+    justify-self: flex-start;
+    margin-right: 45%;
 }
 
 #dropdown-basic-button {
@@ -24,4 +24,5 @@
     background-color: rgb(186, 215, 154);
     border-radius: 1rem;
     padding: 10px;
+    color: black;
 }

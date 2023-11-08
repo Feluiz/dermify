@@ -1,0 +1,16 @@
+.menu-tabs {
+    width: 100%;
+    background-color: rgb(186, 215, 154);
+    margin-top: 0;
+    display: flex;
+    height: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+}
+
+.catalogBody {
+    background-color: rgb(85, 137, 39);
+    bottom: 0;
+}

@@ -1,8 +1,4 @@
-body {
-    background-image: url(./imgs/prods-2x/anture.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 10rem;
-    margin-top: 0;
-  }
+body, html {
+    height: auto;
+    bottom: 0;
+}

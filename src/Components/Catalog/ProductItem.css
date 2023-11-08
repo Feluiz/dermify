@@ -1,0 +1,17 @@
+.elementWrap {
+    border: 2px solid rgb(230, 255, 201);
+    min-width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.elementImg {
+    align-self: center;
+    height: 10rem;
+}
+
+.elementDesc {
+    text-align: center;
+}
