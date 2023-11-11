@@ -185,22 +185,22 @@ export const section5 = [
 export const paquetes = [
     {
         key: 'paq1',
-        title: 'Paquete Uno',
+        title: 'Tratamiento contra acné',
         target: require('../../imgs/prods-2x/acne.png'),
-        price: `500`
+        price: `$410`
     },
 
     {
         key: 'paq2',
-        title: 'Paquete Dos',
+        title: 'Paquete hidratación y limpieza',
         target: require('../../imgs/prods-2x/limpidratacion.png'),
-        price: `600`
+        price: `$1,260`
     },
 
     {
         key: 'paq3',
-        title: 'Paquete Tres',
+        title: 'Paquete limpieza',
         target: require('../../imgs/prods-2x/trat-main.png'),
-        price: `700`
+        price: `$560`
     }
 ]

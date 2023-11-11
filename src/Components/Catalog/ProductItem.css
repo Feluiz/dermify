@@ -1,11 +1,11 @@
 .elementWrap {
     border: 1px solid rgb(230, 255, 201);
-    width: 15rem;
+    width: 12.5rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
     margin: 5px;
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -22,9 +22,11 @@
 
 .elementImg {
     align-self: center;
-    height: 10rem;
+    justify-content: center;
+    max-height: 10rem;
     position: absolute;
-    top: 10px;
+    top: 25px;
+    max-width: 100%;
 }
 
 .elementDesc {

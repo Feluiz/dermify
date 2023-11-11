@@ -10,7 +10,28 @@
     font-size: x-large;
 }
 
-.catalogBody {
+.catalog-body {
     background-image:url('../../imgs/icons/bg-pattern.jpg');
     bottom: 0;
+}
+
+.catalog-list {
+    margin-top: 2.5%;
+}
+
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    position: relative;
+    display: table;
+
+    &:before {
+        border-top: 5px solid #ff00b3;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 0.5em;
+        width: 15%;
+        right: 5px;
+    }
 }
