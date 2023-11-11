@@ -8,6 +8,9 @@ const ProductItem = (data) => {
         <li key={element.key} className='elementWrap'>
             <img className='elementImg' src={element.target} />
             <p className='elementDesc'>{element.title}</p>
+            <div className='price-container'>
+                <p className='price-tag'>{element.price}</p>
+            </div>
         </li>)
     );
 };

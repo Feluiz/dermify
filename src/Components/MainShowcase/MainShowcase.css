@@ -1,9 +1,8 @@
 .main-container {
     display: flex;
     margin-top: 5rem;
-    margin-bottom: 0;
+    padding-top: 3rem;
     justify-content: center;
-    height: 25rem;
     padding-bottom: 5rem;
 }
 
@@ -11,7 +10,7 @@
     background-color: rgba(85, 137, 39, 0.479);
     border-radius: 16px;
     width: 25rem;
-    height: 15rem;
+    height: 13rem;
     display: flex;
     color: aliceblue;
 }
