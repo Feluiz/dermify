@@ -1,0 +1,12 @@
+.modal-card {
+    background-color: rgb(230, 255, 201);
+    width: 60%;
+    display: flex;
+    min-height: 50%;
+    border-radius: 15px;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    left: 20%;
+}
