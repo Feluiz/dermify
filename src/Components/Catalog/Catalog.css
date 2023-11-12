@@ -1,9 +1,8 @@
 .menu-tabs {
     width: 100%;
-    background-color: rgb(186, 215, 154);
     margin-top: 0;
     display: flex;
-    height: 2.5rem;
+    height: max-content;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -34,4 +33,22 @@
         width: 15%;
         right: 5px;
     }
+}
+
+.active {
+    background-color: rgb(147, 188, 102);
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.inactive {
+    background-color: rgb(186, 215, 154);
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    color: white;
+    transition-duration: 0.5s;
 }

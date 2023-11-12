@@ -29,25 +29,22 @@ const Catalog = () => {
         </div>
     </nav>;
 
-    const perPackage = <div>
+    const perPackage = <div className='catalog-list'>
         <h2 className='section-title'>Por paquetes</h2>
         <ProductList props={paquetes} />
     </div >
 
     const tabItem = () => {
-        setMenuType(true);
+        setMenuType((prev) => (!prev));
+        console.log(menuType);
     };
-
-    const tabProduct = () => {
-        setMenuType(false)
-    }
 
 
     return (
         <div className='catalog-body'>
             <div className='menu-tabs'>
-                <a type='button' onClick={tabItem}>Por producto</a>
-                <a type='button' onClick={tabProduct}>Por paquetes</a>
+                <a className={menuType ? 'active' : 'inactive' } onClick={tabItem}>Por producto</a>
+                <a className={!menuType ? 'active' : 'inactive'} onClick={tabItem}>Por paquetes</a>
             </div>
             {menuType ? perItem : perPackage}
         </div >
