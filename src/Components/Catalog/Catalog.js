@@ -43,8 +43,8 @@ const Catalog = () => {
     return (
         <div className='catalog-body'>
             <div className='menu-tabs'>
-                <a className={menuType ? 'active' : 'inactive' } onClick={tabItem}>Por producto</a>
-                <a className={!menuType ? 'active' : 'inactive'} onClick={tabItem}>Por paquetes</a>
+                <a className={menuType ? 'active' : 'inactive' } onClick={!menuType ? tabItem : null}>Por producto</a>
+                <a className={!menuType ? 'active' : 'inactive'} onClick={menuType ? tabItem : null}>Por paquetes</a>
             </div>
             {menuType ? perItem : perPackage}
         </div >
