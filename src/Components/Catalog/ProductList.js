@@ -1,11 +1,11 @@
 import './ProductList.css';
 import ProductItem from './ProductItem';
-// import Modal from '../Modal/Modal';
+import Modal from '../Modal/Modal';
 
 const ProductList = (data) => {
     const inst = [...data.props];
-    const openModal = (elementInfo) => {
-        console.log(elementInfo)
+    const openModal = (info) => {
+        console.log(info);
     };
 
     return (

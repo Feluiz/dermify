@@ -1,6 +1,7 @@
 import './Modal.css';
 
 const Modal = (props) => {
+    console.log(props);
     return (
         <>
             <div className='modal-card'>
