@@ -1,14 +1,16 @@
 import './Modal.css';
 
 const Modal = (props) => {
-    console.log(props);
+    const trigger = props.trigger2;
+    const modalData = {...props.props}
     return (
         <>
             <div className='modal-card'>
-                <h3>{props.title}</h3>
-                <img src={props.img} />
-                <p>{props.descr}</p>
-                <p>{props.price}</p>
+                <h3>{modalData.title}</h3>
+                <img className='modal-img' src={modalData.target} />
+                <p>{modalData.info}</p>
+                <p>{modalData.price}</p>
+                <button type='button' className='close-btn' onClick={() => {trigger(false)}}>Cerrar</button>
             </div>
         </>
     )

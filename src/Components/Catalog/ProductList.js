@@ -1,20 +1,19 @@
 import './ProductList.css';
 import ProductItem from './ProductItem';
-import Modal from '../Modal/Modal';
+
 
 const ProductList = (data) => {
     const inst = [...data.props];
-    const openModal = (info) => {
-        console.log(info);
-    };
+    const power = data.funct;
+    const power2 = data.funct2;
 
-    return (
-        <>
-            <ul className='item-list'>
-                <ProductItem elementData={inst} openModal={openModal} />
-            </ul>
-        </>
-    )
+    return (inst.map(product =>
+        <ProductItem
+            elementData={product}
+            key={product.key}
+            clicky={power}
+            clicky2={power2} />
+    ))
 };
 
 export default ProductList;

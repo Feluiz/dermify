@@ -1,3 +1,12 @@
+.catalog-body {
+    background-image:url('../../imgs/icons/bg-pattern.jpg');
+    bottom: 0;
+}
+
+.catalog-list {
+    margin: 2.5rem;
+}
+
 .menu-tabs {
     width: 100%;
     margin-top: 0;
@@ -9,13 +18,11 @@
     font-size: x-large;
 }
 
-.catalog-body {
-    background-image:url('../../imgs/icons/bg-pattern.jpg');
-    bottom: 0;
-}
-
-.catalog-list {
-    margin-top: 2.5%;
+.section-body {
+    display: flex;
+    flex-direction: row;
+    min-width: min-content;
+    flex-wrap: wrap;
 }
 
 .section-title {
