@@ -12,7 +12,7 @@ const ContactBtn = () => {
     return (
         <div className='contact-button' onClick={contactMenu}>
             <img src={contactImg} className='contact-btn-img' alt='contact image' />
-            <p className='contact-btn-title'>Contáctanos</p>
+            {/* <p className='contact-btn-title'>Contáctanos</p> */}
             {socialMenu ? <ContactCard /> : null}
         </div>
     )
