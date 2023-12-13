@@ -1,7 +1,11 @@
 .full-body {
-    background-image: url(./imgs/prods-2x/anture.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    height: auto;
-  }
+  margin: 0 auto;
+}
+
+.main-header-container {
+  margin-top: -8rem;
+}
+
+body {
+  margin: 0;
+}

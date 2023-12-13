@@ -1,10 +1,7 @@
 .catalog-body {
     background-image:url('../../imgs/icons/bg-pattern.jpg');
     bottom: 0;
-}
-
-.catalog-list {
-    margin: 2.5rem;
+    margin-bottom: -.5rem;
 }
 
 .menu-tabs {
@@ -18,7 +15,16 @@
     font-size: x-large;
 }
 
+.catalog-list {
+    margin: 0 auto;
+}
+
+.item-container {
+    justify-content: center;
+}
+
 .section-body {
+    justify-content: center;
     display: flex;
     flex-direction: row;
     min-width: min-content;
@@ -43,19 +49,49 @@
 }
 
 .active {
-    background-color: rgb(147, 188, 102);
+    display: flex;
+    background-image:url('../../imgs/icons/bg-pattern.jpg');
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    text-align: center;
-    color: white;
+    height: 3rem;
+    color: rgb(0, 0, 0);
     transition-duration: 0.5s;
 }
 
 .inactive {
+    display: flex;
     background-color: rgb(186, 215, 154);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    text-align: center;
+    height: 3rem;
     color: white;
     transition-duration: 0.5s;
+}
+
+@media(max-width: 44rem) {
+    .catalog-list {
+        margin: 0 auto;
+    }
+
+    .section-body {
+        margin: 0 1rem;
+        padding: 0;
+    }
+}
+
+@media(max-width: 25rem) {
+    .catalog-list {
+        margin: 0 auto;
+    }
+
+    .section-body {
+        margin: 0;
+        padding: 0;
+    }
 }

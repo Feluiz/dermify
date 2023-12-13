@@ -1,27 +1,24 @@
 .header-card {
     background-color: rgb(230, 255, 201);
-    width: 66%;
+    width: fit-content;
     padding-right: 2.5%;
     display: flex;
-    flex-direction: row;
     margin: auto;
     border-radius: 15px;
     align-items: center;
-    justify-content: space-between;
-    position: sticky; /*Delete this if it doesn't slide with the scroll*/
+    justify-content: center;
+    position: sticky;
+    /*Delete this if it doesn't slide with the scroll*/
     top: 15px;
     z-index: 99;
 }
 
 .main-logo {
-    height: 6rem;
+    max-height: 8rem;
 }
 
-#dropdown-basic-button {
-    font-size: larger;
-    border: 1px solid rgb(212, 223, 55);
-    background-color: rgb(186, 215, 154);
-    border-radius: 1rem;
-    padding: 10px;
-    color: black;    
+@media(max-width: 37.5rem) {
+    .main-logo {
+        max-height: 6rem;
+    }
 }

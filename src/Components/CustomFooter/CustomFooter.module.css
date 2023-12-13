@@ -1,0 +1,37 @@
+.CustomFooterContainer {
+    position: relative;
+    background: linear-gradient(rgba(230, 255, 201, 0.333), rgb(230, 255, 201));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 105rem;
+}
+
+.FooterInfo {
+    display: flex;
+    max-width: 45%;
+    font-size: larger;
+    align-items: center;
+}
+
+.signature {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.signatureInfo {
+    margin-right: 6px;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+.signatureName {
+    border-bottom: 3px purple solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-width: 45%;
+    margin-top: 0;
+}

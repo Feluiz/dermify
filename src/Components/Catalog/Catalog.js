@@ -11,19 +11,19 @@ const Catalog = () => {
 
 
     const perItem = <nav className='catalog-list'>
-        <div>
+        <div className='item-container'>
             <h2 className='section-title'>Cremas limpiadoras</h2>
             <ul className='section-body'>
                 <ProductList props={section1} funct={setItem} funct2={setOpen}/>
             </ul>
         </div>
-        <div>
+        <div className='item-container'>
             <h2 className='section-title'>Nutricion e hidratación</h2>
             <ul className='section-body'>
                 <ProductList props={section2} funct={setItem} funct2={setOpen} />
             </ul>
         </div>
-        <div>
+        <div className='item-container'>
             <h2 className='section-title'>Jabones naturales</h2>
             <ul className='section-body'>
                 <ProductList props={section3} funct={setItem} funct2={setOpen} />

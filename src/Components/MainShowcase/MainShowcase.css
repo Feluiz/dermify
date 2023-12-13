@@ -1,10 +1,20 @@
 .main-container {
     display: flex;
-    margin-top: 5rem;
-    padding-top: 3rem;
+    flex-direction: row;
+    padding-top: 15rem;
+    align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
     margin-bottom: 0;
+    background-image: url(../../imgs/prods-2x/anture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .container-box {
@@ -13,25 +23,75 @@
     width: 25rem;
     height: 13rem;
     display: flex;
-    color: aliceblue;
+    margin: 1rem;
 }
 
 .title {
+    color: aliceblue;
     margin: auto 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
-    text-align: end;
+    text-align: center;
+}
+
+.img-showcase-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .img-showcase1 {
+    position: relative;
     max-height: 13rem;
-    left: 15%;
     align-self: center;
+    left: 10%;
 }
 
 .img-showcase2 {
+    position: relative;
     max-height: 10rem;
     rotate: calc(45deg);
-    position: relative;
-    right: 5%;
+    right: 15%;
+}
+
+@media(max-width: 45rem) {
+    .main-container {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .img-showcase1 {
+        max-width: 13rem;
+    }
+
+    .img-showcase2 {
+        max-height: 10rem;
+        rotate: calc(45deg);
+        right: 5%;
+    }
+}
+
+@media(max-width: 29rem) {
+    .main-container {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .img-showcase1 {
+        max-width: 9rem;
+        right: 0;
+    }
+
+    .img-showcase2 {
+        max-height: 7rem;
+        rotate: calc(45deg);
+        right: 5%;
+    }
+
+    .container-box {
+        width: 20rem;
+        height: 13rem;
+    }
 }

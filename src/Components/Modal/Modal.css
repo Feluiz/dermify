@@ -1,6 +1,7 @@
 .modal-card {
     background-color: rgb(230, 255, 201);
-    width: 60%;
+    width: 50%;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     min-height: 50%;
@@ -8,12 +9,64 @@
     border-radius: 15px;
     align-items: center;
     padding: 1rem;
-    z-index: 99;
+    z-index: 199;
     position: fixed;
-    top: 25%;
-    left: 20%;
+    top: 15%;
+    left: 2.5%;
+}
+
+.overlay {
+    position: fixed; /* Positioning and size */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5); /* color */
+    display: none; /* making it hidden by default */
+  }
+
+.modal-title {
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    max-width: 90%;
+    text-align: center;
+    text-shadow: #548557 -2px -2px 25px, #548557 -2.5px -1px 10px, #548557 2.5px 1px 10px;
+}
+
+.modal-card-info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    text-align: center;
 }
 
 .modal-img {
-    max-height: 3rem;
+    max-height: 15rem;
+}
+
+.modal-card-price {
+    font-size: xx-large;
+    font-family: Barlow;
+    color: #548557;
+    margin: 0;
+    padding-bottom: 1rem;
+
+}
+
+.close-btn {
+    justify-self: flex-end;
+    font-size: larger;
+    color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #548557;
+
+}
+
+@media(max-width: 48rem) {
+    .modal-card {
+        width: 85%;
+        top: 10%;
+        left: 0;
+    }
 }

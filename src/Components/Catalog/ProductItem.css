@@ -36,6 +36,7 @@
     justify-items: flex-end;
     margin-bottom: 5px;
     bottom: 19px;
+    font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -47,8 +48,14 @@
 }
 
 .price-tag {
+    margin: 0;
     font-size: x-large;
-    font-weight: 600;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Barlow;
     color: rgb(43, 146, 49);
+}
+
+@media(max-width: 30rem) {
+    .elementWrap {
+        max-width: 9.5rem;
+    }
 }

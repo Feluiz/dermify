@@ -1,0 +1,50 @@
+.contact-button {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 2rem;
+    left: 1rem;
+    max-width: 5rem;
+    max-height: 5rem;
+    z-index: 33;
+}
+
+.contact-btn-title {
+    font-size: x-large;
+    padding: 1rem;
+    padding-left: 3rem;
+    border-radius: 2rem;
+    margin-left: -3rem;
+    color: white;
+    background-color: #29a71a;
+}
+
+.contact-btn-img {
+    height: 6em;
+    z-index: 34;
+}
+
+@media(max-width: 60rem) {
+    .contact-button {
+        bottom: 5rem;
+        z-index: 99;
+    }
+
+    .contact-btn-img {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media(max-height:19rem) {
+    .contact-button {
+        bottom: 5rem;
+        z-index: 99;
+    }
+
+    .contact-btn-img {
+        height: 4rem;
+        width: 4rem;
+    }
+}

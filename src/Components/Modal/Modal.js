@@ -5,13 +5,13 @@ const Modal = (props) => {
     const modalData = {...props.props}
     return (
         <>
-            <div className='modal-card'>
-                <h3>{modalData.title}</h3>
+            <dialog className='modal-card'>
+                <p className='modal-title'>{modalData.title}</p>
                 <img className='modal-img' src={modalData.target} />
-                <p>{modalData.info}</p>
-                <p>{modalData.price}</p>
+                <p className='modal-card-info'>{modalData.info}</p>
+                <p className='modal-card-price'>$<b>{modalData.price}</b>.00</p>
                 <button type='button' className='close-btn' onClick={() => {trigger(false)}}>Cerrar</button>
-            </div>
+            </dialog>
         </>
     )
 };
