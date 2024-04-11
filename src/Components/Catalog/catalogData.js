@@ -12,7 +12,7 @@ export const section1 = [
         title: 'Crema Artesanal Dolar',
         info: 'Crema limpiadora',
         target: require('../../imgs/prods/crema-dolar.png'),
-        price: `220`
+        price: `230`
     }
 ]
 
@@ -127,6 +127,14 @@ export const section4 = [
         info: 'Concentrado a base de ingredientes naturales que promueve la producción natural de colágeno en la piel.',
         target: require('../../imgs/prods/concentrado.png'),
         price: `150`
+    },
+
+    {
+        key: 'sect4-3',
+        title: 'Crema líquida de protección solar 50FPS',
+        info: 'De uso tópico facial y corporal. Con protección prolongada y resistencia al agua, humecta e hidrata la piel mientras actúa con su amplio espectro de protección solar.',
+        target: require('../../imgs/prods/protector.png'),
+        price: `300`
     }
 ]
 

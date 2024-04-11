@@ -30,7 +30,7 @@ const Catalog = () => {
             </ul>
         </div>
         <div>
-            <h2 className='section-title'>Exfoliantes y aclaradores</h2>
+            <h2 className='section-title'>Auxiliares</h2>
             <ul className='section-body'>
                 <ProductList props={section4} funct={setItem} funct2={setOpen} />
             </ul>
