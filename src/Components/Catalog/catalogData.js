@@ -32,7 +32,7 @@ export const section2 = [
         title: 'Nunncare Aqua Serum',
         info: '',
         target: require('../../imgs/prods/aqua-serum.png'),
-        price: `200`
+        price: `220`
     },
 
     {
