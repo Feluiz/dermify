@@ -1,5 +1,6 @@
 import './ProductList.css';
 import ProductItem from './ProductItem';
+import CatalogItem from './CatalogItem';
 
 
 const ProductList = (data) => {
@@ -8,11 +9,12 @@ const ProductList = (data) => {
     const power2 = data.funct2;
 
     return (inst.map(product =>
-        <ProductItem
+        <CatalogItem
             elementData={product}
             key={product.key}
             clicky={power}
-            clicky2={power2} />
+            clicky2={power2}
+            section={data.section} />
     ))
 };
 
