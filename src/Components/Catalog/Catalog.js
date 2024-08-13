@@ -4,6 +4,8 @@ import ProductList from './ProductList';
 import Modal from '../Modal/Modal';
 import { section1, section2, section3, section4, section5, paquetes } from './catalogData';
 
+import CatalogItem from './CatalogItem';
+
 const Catalog = () => {
     const [menuType, setMenuType] = useState(true);
     const [item, setItem] = useState('');
@@ -11,6 +13,9 @@ const Catalog = () => {
 
 
     const perItem = <nav className='catalog-list'>
+        <div>
+            <CatalogItem />
+        </div>
         <div className='item-container'>
             <h2 className='section-title'>Cremas limpiadoras</h2>
             <ul className='section-body'>
