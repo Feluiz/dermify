@@ -29,6 +29,7 @@
     flex-direction: row;
     min-width: min-content;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .section-title {

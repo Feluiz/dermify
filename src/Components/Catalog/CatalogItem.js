@@ -2,30 +2,31 @@ import { useState } from "react";
 import "./CatalogItem.css";
 
 const CatalogItem = (data) => {
-    let menuType = 'img-element';
+  let menuType = 'img-element';
   const prodInfo = { ...data.elementData };
 
   switch (data.section) {
     case 'cremas':
-        menuType = 'img-element-cremas';
-        break;
+      menuType = 'img-element-cremas';
+      break;
     case 'nutricion':
-        menuType = 'img-element-nutricion';
-        break;
+      menuType = 'img-element-nutricion';
+      break;
   }
 
   const action = data.clicky;
   const action2 = data.clicky2;
 
   return (
-    <div className="wrapper-container">
+    <li className="wrapper-container">
       <div className="first-container">
         <div className="midbar"></div>
         <p className="product-label">{prodInfo.title}</p>
         <p className="price-tag">
           $<span>{prodInfo.price}</span>MXN
         </p>
-        <div className="product-container">
+        <div className="img-square-container">
+          <div className="product-container"></div>
           <img src={prodInfo.target} className={menuType} />
         </div>
         <button
@@ -38,7 +39,7 @@ const CatalogItem = (data) => {
           <p className="button-text">Detalles</p>
         </button>
       </div>
-    </div>
+    </li>
   );
 };
 
