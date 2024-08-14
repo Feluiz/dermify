@@ -27,19 +27,19 @@ const Catalog = () => {
         <div className='item-container'>
             <h2 className='section-title'>Jabones naturales</h2>
             <ul className='section-body'>
-                <ProductList props={section3} funct={setItem} funct2={setOpen} />
+                <ProductList props={section3} funct={setItem} funct2={setOpen} section={'jabones'}/>
             </ul>
         </div>
         <div>
             <h2 className='section-title'>Auxiliares</h2>
             <ul className='section-body'>
-                <ProductList props={section4} funct={setItem} funct2={setOpen} />
+                <ProductList props={section4} funct={setItem} funct2={setOpen} section={'auxiliares'}/>
             </ul>
         </div>
         <div>
             <h2 className='section-title'>Shampoos naturales</h2>
             <ul className='section-body'>
-                <ProductList props={section5} funct={setItem} funct2={setOpen} />
+                <ProductList props={section5} funct={setItem} funct2={setOpen} section={'shampoos'}/>
             </ul>
         </div>
     </nav>;
@@ -58,7 +58,7 @@ const Catalog = () => {
 
     return (
         <div className='catalog-body'>
-            <div className='menu-tabs'>
+            {/* <div className='menu-tabs'>
                 <a className={
                     menuType ? 'active' : 'inactive'}
                     onClick={!menuType ? tabItem : null}
@@ -68,8 +68,8 @@ const Catalog = () => {
                     onClick={menuType ? tabItem : null}
                 >Por paquetes</a>
                 { }
-            </div>
-            {menuType ? perItem : perPackage}
+            </div> */}
+            {perItem}
             {open ? <Modal props={item} trigger2={setOpen}/> : null}
         </div >
     )
