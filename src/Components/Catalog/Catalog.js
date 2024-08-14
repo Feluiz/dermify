@@ -15,31 +15,31 @@ const Catalog = () => {
         <div className='item-container'>
             <h2 className='section-title'>Cremas limpiadoras</h2>
             <ul className='section-body'>
-                <ProductList props={section1} funct={setItem} funct2={setOpen} section={'cremas'}/>
+                <ProductList props={section1} funct={setItem} funct2={setOpen} section={'cremas'} />
             </ul>
         </div>
         <div className='item-container'>
             <h2 className='section-title'>Nutricion e hidratación</h2>
             <ul className='section-body'>
-                <ProductList props={section2} funct={setItem} funct2={setOpen} section={'nutricion'}/>
+                <ProductList props={section2} funct={setItem} funct2={setOpen} section={'nutricion'} />
             </ul>
         </div>
         <div className='item-container'>
             <h2 className='section-title'>Jabones naturales</h2>
             <ul className='section-body'>
-                <ProductList props={section3} funct={setItem} funct2={setOpen} />
+                <ProductList props={section3} funct={setItem} funct2={setOpen} section={'jabones'} />
             </ul>
         </div>
         <div>
             <h2 className='section-title'>Auxiliares</h2>
             <ul className='section-body'>
-                <ProductList props={section4} funct={setItem} funct2={setOpen} />
+                <ProductList props={section4} funct={setItem} funct2={setOpen} section={'auxiliares'} />
             </ul>
         </div>
         <div>
             <h2 className='section-title'>Shampoos naturales</h2>
             <ul className='section-body'>
-                <ProductList props={section5} funct={setItem} funct2={setOpen} />
+                <ProductList props={section5} funct={setItem} funct2={setOpen} section={'shampoos'} />
             </ul>
         </div>
     </nav>;
@@ -47,8 +47,8 @@ const Catalog = () => {
     const perPackage = <div className='catalog-list'>
         <h2 className='section-title'>Por paquetes</h2>
         <ul className='section-body'>
-                <ProductList props={paquetes} funct={setItem} funct2={setOpen}/>
-            </ul>
+            <ProductList props={paquetes} funct={setItem} funct2={setOpen} />
+        </ul>
     </div >
 
     const tabItem = () => {
@@ -58,7 +58,7 @@ const Catalog = () => {
 
     return (
         <div className='catalog-body'>
-            <div className='menu-tabs'>
+            {/* <div className='menu-tabs'>
                 <a className={
                     menuType ? 'active' : 'inactive'}
                     onClick={!menuType ? tabItem : null}
@@ -68,9 +68,9 @@ const Catalog = () => {
                     onClick={menuType ? tabItem : null}
                 >Por paquetes</a>
                 { }
-            </div>
-            {menuType ? perItem : perPackage}
-            {open ? <Modal props={item} trigger2={setOpen}/> : null}
+            </div> */}
+            {perItem}
+            {open ? <Modal props={item} trigger2={setOpen} /> : null}
         </div >
     )
 

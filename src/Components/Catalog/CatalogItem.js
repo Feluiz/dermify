@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./CatalogItem.css";
 
 const CatalogItem = (data) => {
@@ -11,6 +10,15 @@ const CatalogItem = (data) => {
       break;
     case 'nutricion':
       menuType = 'img-element-nutricion';
+      break;
+    case 'jabones':
+      menuType = 'img-element-jabon';
+      break;
+    case 'auxiliares':
+      menuType = 'img-element-aux';
+      break;
+    case 'shampoos':
+      menuType = 'img-element-shampoo';
       break;
   }
 
