@@ -3,7 +3,6 @@ import "./CatalogItem.css";
 const CatalogItem = (data) => {
   let menuType = 'img-element';
   const prodInfo = { ...data.elementData };
-  console.log(data)
 
   switch (data.section) {
     case 'Cremas limpiadoras':
