@@ -3,7 +3,8 @@ import logoImg from "../../imgs/icons/favicon.png";
 
 const Modal = (props) => {
   const trigger = props.trigger2;
-  const modalData = { ...props.props };
+  const modalData = { ...props.props.prodInfo };
+  const sectInfo = props.props.infoData;
   return (
     <>
       <dialog className="modal-card">
@@ -11,7 +12,7 @@ const Modal = (props) => {
           <img src={logoImg} alt="dermify logo" className="logo-img" />
           <div className="header-titles">
             <p className="modal-title">{modalData.title}</p>
-            <p className="modal-categoria">Jabones</p>
+            <p className="modal-categoria">{sectInfo}</p>
           </div>
         </div>
         <div className="img-section-container">

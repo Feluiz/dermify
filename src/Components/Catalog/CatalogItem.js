@@ -2,6 +2,7 @@ import "./CatalogItem.css";
 
 const CatalogItem = (data) => {
   let menuType = 'img-element';
+  const infoData = data.section;
   const prodInfo = { ...data.elementData };
 
   switch (data.section) {
@@ -40,7 +41,7 @@ const CatalogItem = (data) => {
         <button
           className="info-button"
           onClick={() => {
-            action(prodInfo);
+            action({prodInfo, infoData});
             action2(true);
             data.setBackdrop.setBackdrop(true)
           }}
