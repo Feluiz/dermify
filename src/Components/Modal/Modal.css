@@ -1,6 +1,7 @@
 .modal-card {
   background-color: rgb(230, 255, 201);
   width: 50%;
+  max-height: 90%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@
   padding: 0 0 1rem 0;
   z-index: 2999;
   position: fixed;
-  top: 15%;
+  top: 2.5%;
   left: 2.5%;
 }
 
@@ -24,13 +25,16 @@
 }
 
 .overlay {
-  position: fixed; /* Positioning and size */
+  position: fixed;
+  /* Positioning and size */
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(128, 128, 128, 0.5); /* color */
-  display: none; /* making it hidden by default */
+  background-color: rgba(128, 128, 128, 0.5);
+  /* color */
+  display: none;
+  /* making it hidden by default */
 }
 
 .header-titles {
@@ -49,6 +53,7 @@
   text-shadow: #548557 -2px -2px 25px, #548557 -2.5px -1px 10px,
     #548557 2.5px 1px 10px;
   margin-bottom: 0.25rem;
+  text-wrap: nowrap;
 }
 
 .modal-categoria {
@@ -59,7 +64,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large;
   text-align: center;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .modal-img {
