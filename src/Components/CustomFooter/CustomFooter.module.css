@@ -29,9 +29,11 @@
 }
 
 .signatureName {
-    border-bottom: 3px purple solid;
+    border-left: 3px purple solid;
+    border-right: 3px purple solid;
+    padding: 0 1rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    max-width: 45%;
+    max-width: 35%;
     margin-top: 0;
 }

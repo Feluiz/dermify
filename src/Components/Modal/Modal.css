@@ -1,72 +1,129 @@
 .modal-card {
-    background-color: rgb(230, 255, 201);
-    width: 50%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    min-height: 50%;
-    border: 1px solid black;
-    border-radius: 15px;
-    align-items: center;
-    padding: 1rem;
-    z-index: 199;
-    position: fixed;
-    top: 15%;
-    left: 2.5%;
+  background-color: rgb(230, 255, 201);
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 50%;
+  border: 1px solid black;
+  border-radius: 15px;
+  align-items: center;
+  padding: 0 0 1rem 0;
+  z-index: 2999;
+  position: fixed;
+  top: 15%;
+  left: 2.5%;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0 1rem 1rem;
+  align-self: flex-start;
+  height: 5rem;
 }
 
 .overlay {
-    position: fixed; /* Positioning and size */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(128,128,128,0.5); /* color */
-    display: none; /* making it hidden by default */
-  }
+  position: fixed; /* Positioning and size */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.5); /* color */
+  display: none; /* making it hidden by default */
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-left: 1rem;
+}
 
 .modal-title {
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(0, 0, 0);
-    max-width: 90%;
-    text-align: center;
-    text-shadow: #548557 -2px -2px 25px, #548557 -2.5px -1px 10px, #548557 2.5px 1px 10px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(0, 0, 0);
+  max-width: 90%;
+  text-align: left;
+  text-shadow: #548557 -2px -2px 25px, #548557 -2.5px -1px 10px,
+    #548557 2.5px 1px 10px;
+  margin-bottom: 0.25rem;
+}
+
+.modal-categoria {
+  margin-top: 0;
 }
 
 .modal-card-info {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+  text-align: center;
+  padding: 1rem;
 }
 
 .modal-img {
-    max-height: 15rem;
+  max-height: 15rem;
+}
+
+.logo-img {
+  width: auto;
+  height: 50%;
+  margin-top: 1rem;
 }
 
 .modal-card-price {
-    font-size: xx-large;
-    font-family: Barlow;
-    color: #548557;
-    margin: 0;
-    padding-bottom: 1rem;
-
+  font-size: xx-large;
+  font-family: Barlow;
+  color: #548557;
+  margin: 0;
 }
 
 .close-btn {
-    justify-self: flex-end;
-    font-size: larger;
-    color: white;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    background-color: #548557;
-
+  margin: 0 10% 0 5%;
+  font-size: larger;
+  color: white;
+  border-radius: 1.5rem;
+  background-color: #548557;
+  border: none;
+  width: 7.5rem;
+  height: 2.5rem;
+  text-align: center;
 }
 
-@media(max-width: 48rem) {
-    .modal-card {
-        width: 85%;
-        top: 10%;
-        left: 0;
-    }
+.img-section-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  margin: 0 0;
+  justify-content: center;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media (max-width: 48rem) {
+  .modal-card {
+    width: 85%;
+    min-height: 50%;
+    top: 10%;
+    left: 0;
+    border: none;
+  }
+
+  .modal-img {
+    max-height: 10rem;
+  }
+
+  .modal-card-info {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: medium;
+    text-align: left;
+    padding: 1rem;
+  }
 }

@@ -6,7 +6,7 @@ const CustomFooter = () => {
             <p className={classes.FooterInfo}>Estos productos no son medicamentos.</p>
             <div className={classes.signature}>
                 <p className={classes.signatureInfo}>Sitio creado por</p>
-                <p className={classes.signatureName}>Devuiz</p>
+                <p className={classes.signatureName}>Fluits</p>
             </div>
         </div>
     )

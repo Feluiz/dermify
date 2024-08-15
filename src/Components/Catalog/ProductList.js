@@ -1,5 +1,4 @@
 import './ProductList.css';
-import ProductItem from './ProductItem';
 import CatalogItem from './CatalogItem';
 
 
@@ -7,6 +6,8 @@ const ProductList = (data) => {
     const inst = [...data.props];
     const power = data.funct;
     const power2 = data.funct2;
+    const backdropAct = data.setBackdrop
+
 
     return (inst.map(product =>
         <CatalogItem
@@ -14,7 +15,8 @@ const ProductList = (data) => {
             key={product.key}
             clicky={power}
             clicky2={power2}
-            section={data.section} />
+            section={data.section}
+            setBackdrop={backdropAct} />
     ))
 };
 

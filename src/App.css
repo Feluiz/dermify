@@ -1,5 +1,8 @@
 .full-body {
   margin: 0 auto;
+  background-color: black;
+  z-index: 100;
+  opacity: 1;
 }
 
 .main-header-container {
@@ -8,4 +11,27 @@
 
 body {
   margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  /* Add animation */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Define the keyframes for the fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

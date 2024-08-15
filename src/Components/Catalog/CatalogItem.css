@@ -66,7 +66,7 @@
 
 .button-text {
     position: relative;
-    color: #B32D45;
+    color: white;
     font-size: 28px; /* 80% of 35px */
     text-align: center;
     font-weight: 400;
@@ -224,7 +224,7 @@
     
     .button-text {
         position: relative;
-        color: #B32D45;
+        color: white;
         font-size: 14px; /* 40% of 35px */
         text-align: center;
         font-weight: 400;

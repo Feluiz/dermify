@@ -3,21 +3,22 @@ import "./CatalogItem.css";
 const CatalogItem = (data) => {
   let menuType = 'img-element';
   const prodInfo = { ...data.elementData };
+  console.log(data)
 
   switch (data.section) {
-    case 'cremas':
+    case 'Cremas limpiadoras':
       menuType = 'img-element-cremas';
       break;
-    case 'nutricion':
+    case 'Nutricion e hidratación':
       menuType = 'img-element-nutricion';
       break;
-    case 'jabones':
+    case 'Jabones naturales':
       menuType = 'img-element-jabon';
       break;
-    case 'auxiliares':
+    case 'Auxiliares':
       menuType = 'img-element-aux';
       break;
-    case 'shampoos':
+    case 'Shampoos':
       menuType = 'img-element-shampoo';
       break;
   }
@@ -42,6 +43,7 @@ const CatalogItem = (data) => {
           onClick={() => {
             action(prodInfo);
             action2(true);
+            data.setBackdrop.setBackdrop(true)
           }}
         >
           <p className="button-text">Detalles</p>
