@@ -52,6 +52,7 @@
     line-height: 32px; /* 80% of 40px */
     align-content: center;
     text-wrap: wrap;
+    justify-content: space-around;
 }
 
 .button-text {
@@ -85,7 +86,6 @@
     width: 64px; /* 80% of 80px */
     height: 4px; /* 80% of 5px */
     position: absolute;
-    bottom: 168px; /* 80% of 210px */
     left: 256px; /* 80% of 320px */
     border-radius: 5px;
 }
@@ -149,7 +149,7 @@
     .wrapper-container {
         flex-wrap: wrap;
         width: 19rem; 
-        height: 10.2rem; /* 40% of 408px */
+        height: 11rem; /* 40% of 408px */
         background-color: transparent;
         display: flex;
         position: relative;
@@ -160,10 +160,11 @@
     
     .first-container {
         width: 252px; /* 40% of 380px */
-        height: 138.8px; /* 40% of 347px */
-        background: rgb(218,249,208);
-        background: linear-gradient(270deg, rgba(218,249,208,1) 25%, rgba(255,255,255,1) 100%);
+        height: 86.25%; /* 40% of 347px */
+        background: url('../../imgs/icons/bg-pattern.jpg');
+        background: linear-gradient(270deg, rgba(218,249,208,1) 25%, rgba(255, 255, 255, 0) 100%);
         border-radius: 9px;
+        background-blend-mode: overlay;
     }
     
     .img-square-container {
@@ -190,16 +191,17 @@
     }
     
     .product-label {
-        position: relative;
+        display: flex;
         left: 40%; /* 40% of 75px */
-        width: 121.2px; /* 40% of 303px */
-        height: auto; /* 40% of 9rem */
+        max-width: 55%; /* 40% of 303px */
+        height: 30%;
+        max-height: 50%; /* 40% of 9rem */
         color: #B32D45;
         font-size: 16px; /* 40% of 35px */
         text-align: center;
         font-weight: 400;
-        line-height: 16px; /* 40% of 40px */
-        align-content: center;
+        line-height: 16px; 
+        align-items: center;
         text-wrap: wrap;
     }
     
@@ -214,7 +216,7 @@
     }
     
     .price-tag {
-        position: relative;
+        display: flex;  
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: #B32D45;
         font-size: 14px; /* 40% of 35px */
@@ -222,7 +224,8 @@
         font-weight: 400;
         line-height: 28.8px; /* 40% of 72px */
         top: 8px; /* 40% of -20px */
-        left: 16px; /* 40% of 40px */
+        left: 20%; /* 40% of 40px */
+        justify-content: center;
     }
     
     .price-tag span {
@@ -234,8 +237,7 @@
         width: 32px; /* 40% of 80px */
         height: 2px; /* 40% of 5px */
         position: absolute;
-        bottom: 84px; /* 40% of 210px */
-        left: 178px; /* 40% of 320px */
+        left: 69%; /* 40% of 320px */
         border-radius: 5px;
     }
     
@@ -251,16 +253,16 @@
         height: auto;
         width: 225%; /* 40% of 150% */
         position: relative;
-        bottom: -15px; /* 40% of -30px */
+        bottom: -20px; /* 40% of -30px */
         right: 24px; /* 40% of 60px */
         z-index: 10;
     }
     
     .img-element-nutricion {
         height: auto;
-        width: 60%; /* 40% of 60% */
+        width: 75%; /* 40% of 60% */
         position: relative;
-        top: 0px;
+        top: 12.5px;
         left: 20px; /* 40% of 50px */
         z-index: 10;
     }
