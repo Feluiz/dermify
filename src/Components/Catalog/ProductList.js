@@ -1,5 +1,5 @@
 import './ProductList.css';
-import CatalogItem from './CatalogItem';
+import CatalogSection from './CatalogSection';
 
 
 const ProductList = (data) => {
@@ -10,7 +10,7 @@ const ProductList = (data) => {
 
 
     return (inst.map(product =>
-        <CatalogItem
+        <CatalogSection
             elementData={product}
             key={product.key}
             clicky={power}
