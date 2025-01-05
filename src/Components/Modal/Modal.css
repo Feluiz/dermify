@@ -53,7 +53,7 @@
   text-shadow: #548557 -2px -2px 25px, #548557 -2.5px -1px 10px,
     #548557 2.5px 1px 10px;
   margin-bottom: 0.25rem;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 
 .modal-categoria {
@@ -122,7 +122,7 @@
   }
 
   .modal-img {
-    max-height: 10rem;
+    max-height: 13rem;
   }
 
   .modal-card-info {
