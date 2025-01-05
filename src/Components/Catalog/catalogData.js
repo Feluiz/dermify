@@ -22,7 +22,7 @@ export const section2 = [
     {
         key: 'sect2-1',
         title: 'Firmeskin',
-        info: '',
+        info: 'Crema antiedad multiregeneradora',
         target: require('../../imgs/prods/firmeskin.png'),
         price: `400`
     },
@@ -38,7 +38,7 @@ export const section2 = [
     {
         key: 'sect2-3',
         title: 'Acido Hialuronico Sophia',
-        info: '',
+        info: 'Ácido Hialurónico + Vitamina C + Vitamina E + Colágeno',
         target: require('../../imgs/prods/sophia.png'),
         price: `300`
     },

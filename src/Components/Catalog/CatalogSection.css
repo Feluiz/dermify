@@ -1,0 +1,296 @@
+.wrapper-container {
+    flex-wrap: wrap;
+    width: 412.8px; /* 80% of 516px */
+    height: 326.4px; /* 80% of 408px */
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    margin: 1rem auto;
+    align-content: stretch;
+    justify-content: flex-end;
+}
+
+.first-container {
+    width: 304px; /* 80% of 380px */
+    height: 277.6px; /* 80% of 347px */
+    background-color: #DAF9D0;
+    border-radius: 9px;
+}
+
+.img-square-container {
+    display: flex;
+    width: 136.8px; /* 80% of 171px */
+    height: 257.6px; /* 80% of 322px */
+    top: 20.8px; /* 80% of 26px */
+    left: 36px; /* 80% of 45px */
+    position: absolute;
+    border-radius: 10px 10px 0 10px;
+    align-content: flex-start;
+    align-items: flex-end;
+}
+
+.info-button {
+    width: 239.2px; /* 80% of 299px */
+    height: 71.2px; /* 80% of 89px */
+    border-radius: 0 0 7px 0;
+    border: none;
+    background-color: #88A978;
+    bottom: 48px; /* 80% of 60px */
+    right: 0px;
+    position: absolute;
+}
+
+.product-label {
+    position: relative;
+    left: 60px; /* 80% of 75px */
+    width: 242.4px; /* 80% of 303px */
+    height: 7.2rem; /* 80% of 9rem */
+    color: #B32D45;
+    font-size: 28px; /* 80% of 35px */
+    text-align: center;
+    font-weight: 400;
+    line-height: 32px; /* 80% of 40px */
+    align-content: center;
+    text-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button-text {
+    position: relative;
+    color: white;
+    font-size: 28px; /* 80% of 35px */
+    text-align: center;
+    font-weight: 400;
+    line-height: 42px; /* 80% of 52.5px */
+    top: -12px; /* 80% of -15px */
+}
+
+.price-tag {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #B32D45;
+    font-size: 28px; /* 80% of 35px */
+    text-align: center;
+    font-weight: 400;
+    line-height: 57.6px; /* 80% of 72px */
+    top: -16px; /* 80% of -20px */
+    left: 32px; /* 80% of 40px */
+}
+
+.price-tag span {
+    font-weight: 700;
+}
+
+.midbar {
+    background-color: #88A978;
+    width: 64px; /* 80% of 80px */
+    height: 4px; /* 80% of 5px */
+    position: absolute;
+    left: 256px; /* 80% of 320px */
+    border-radius: 5px;
+}
+
+.img-element {
+    height: auto;
+    width: 48%; /* 80% of 60% */
+    position: relative;
+    bottom: 48px; /* 80% of 60px */
+    z-index: 10;
+}
+
+.img-element-cremas {
+    height: auto;
+    width: 150%; /* 80% of 150% */
+    position: relative;
+    bottom: -24px; /* 80% of -30px */
+    right: 48px; /* 80% of 60px */
+    z-index: 10;
+}
+
+.img-element-nutricion {
+    height: auto;
+    width: 60%; /* 80% of 60% */
+    position: relative;
+    top: 0px;
+    left: 40px; /* 80% of 50px */
+    z-index: 10;
+}
+
+.img-element-jabon {
+    height: auto;
+    width: 150%; /* 80% of 60% */
+    position: relative;
+    bottom: 48px; /* 80% of 60px */
+    z-index: 10;
+    right: 40px;
+}
+
+.img-element-aux {
+    height: auto;
+    width: 60%; /* 80% of 60% */
+    position: relative;
+    bottom: 48px; /* 80% of 60px */
+    z-index: 10;
+}
+
+.img-element-shampoo {
+    height: auto;
+    width: 80%; /* 80% of 60% */
+    position: relative;
+    bottom: 10px; /* 80% of 60px */
+    z-index: 10;
+    left: 10px;
+}
+
+
+
+/* FIRST SCREEN SIZE BREAKPOINT */
+@media(max-width: 44rem) {
+    .wrapper-container {
+        flex-wrap: wrap;
+        width: 19rem; 
+        height: 11rem; /* 40% of 408px */
+        background-color: transparent;
+        display: flex;
+        position: relative;
+        margin: 1rem auto;
+        align-content: stretch;
+        justify-content: flex-end;
+    }
+    
+    .first-container {
+        width: 252px; /* 40% of 380px */
+        height: 86.25%; /* 40% of 347px */
+        background: url('../../imgs/icons/bg-pattern.jpg');
+        background: linear-gradient(270deg, rgba(218,249,208,1) 25%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 9px;
+        background-blend-mode: overlay;
+    }
+    
+    .img-square-container {
+        display: flex;
+        width: 68.4px; /* 40% of 171px */
+        height: 128.8px; /* 40% of 322px */
+        top: 10.4px; /* 40% of 26px */
+        left: 18px; /* 40% of 45px */
+        position: absolute;
+        border-radius: 10px 10px 0 10px;
+        align-content: flex-start;
+        align-items: flex-end;
+    }
+    
+    .info-button {
+        width: 119.6px; /* 40% of 299px */
+        height: 35.6px; /* 40% of 89px */
+        border-radius: 0 0 7px 0;
+        border: none;
+        background-color: #88A978;
+        bottom: 24px; /* 40% of 60px */
+        right: 0px;
+        position: absolute;
+    }
+    
+    .product-label {
+        display: flex;
+        left: 40%; /* 40% of 75px */
+        max-width: 55%; /* 40% of 303px */
+        height: 30%;
+        max-height: 50%; /* 40% of 9rem */
+        color: #B32D45;
+        font-size: 16px; /* 40% of 35px */
+        text-align: center;
+        font-weight: 400;
+        line-height: 16px; 
+        align-items: center;
+        text-wrap: wrap;
+    }
+    
+    .button-text {
+        position: relative;
+        color: white;
+        font-size: 14px; /* 40% of 35px */
+        text-align: center;
+        font-weight: 400;
+        line-height: 21px; /* 40% of 52.5px */
+        top: -6px; /* 40% of -15px */
+    }
+    
+    .price-tag {
+        display: flex;  
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #B32D45;
+        font-size: 14px; /* 40% of 35px */
+        text-align: center;
+        font-weight: 400;
+        line-height: 28.8px; /* 40% of 72px */
+        top: 8px; /* 40% of -20px */
+        left: 27.5%; /* 40% of 40px */
+        justify-content: center;
+        width: 80%;
+    }
+    
+    .price-tag span {
+        font-weight: 700;
+    }
+    
+    .midbar {
+        background-color: #88A978;
+        width: 32px; /* 40% of 80px */
+        height: 2px; /* 40% of 5px */
+        position: absolute;
+        left: 69%; /* 40% of 320px */
+        border-radius: 5px;
+    }
+    
+    .img-element {
+        height: auto;
+        width: 30%; /* 40% of 60% */
+        position: relative;
+        bottom: 24px; /* 40% of 60px */
+        z-index: 10;
+    }
+    
+    .img-element-cremas {
+        height: auto;
+        width: 225%; /* 40% of 150% */
+        position: relative;
+        bottom: -20px; /* 40% of -30px */
+        right: 24px; /* 40% of 60px */
+        z-index: 10;
+    }
+    
+    .img-element-nutricion {
+        height: auto;
+        width: 75%; /* 40% of 60% */
+        position: relative;
+        top: 12.5px;
+        left: 20px; /* 40% of 50px */
+        z-index: 10;
+    }
+
+    .img-element-jabon {
+        height: auto;
+        width: 250%; /* 80% of 60% */
+        position: relative;
+        bottom: 10px; /* 80% of 60px */
+        z-index: 10;
+        right: 35px;
+    }
+
+    .img-element-aux {
+        width: auto;
+        height: 160%; 
+        position: relative;
+        bottom: -25px; /* 80% of 60px */
+        z-index: 10;
+    }
+
+    .img-element-shampoo {
+        height: auto;
+        width: 100%; /* 80% of 60% */
+        position: relative;
+        bottom: -20px;
+        z-index: 10;
+    }
+    
+}
